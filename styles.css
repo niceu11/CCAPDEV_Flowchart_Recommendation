@@ -74,7 +74,7 @@ a::after {
     transition: width 0.3s ease;
 }
 
-a:hover::after {
+.nav-links a:hover::after {
     width: 100%;
 }
 
@@ -121,9 +121,10 @@ a:hover::after {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.sidebar button {
+.sidebar button, .nav-btn  {
     width: 100%;
     margin-top: auto;
+    margin: 5px;
     background-color: #538d11;
     color: white;
     border: none;
@@ -136,7 +137,7 @@ a:hover::after {
     box-shadow: 0 4px 8px rgba(83, 141, 17, 0.3);
 }
 
-.sidebar button:hover {
+.sidebar button:hover, .nav-btn:hover {
     background-color: #3f6f0c;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
@@ -175,7 +176,7 @@ a:hover::after {
     box-shadow: 0 0 0 3px rgba(122, 178, 78, 0.2);
 }
 
-.add-button {
+.add-button, .save-button {
     background-color: #538d11;
     color: white;
     border: none;
@@ -188,13 +189,13 @@ a:hover::after {
     box-shadow: 0 4px 8px rgba(83, 141, 17, 0.3);
 }
 
-.add-button:hover {
+.add-button:hover, .save-button:hover {
     background-color: #3f6f0c;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
 }
 
-.results-course {
+.results {
     color: white;
     background: linear-gradient(135deg, #7ab24e 0%, #538d11 100%);
     border: none;
@@ -205,7 +206,7 @@ a:hover::after {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.results-course li {
+.results li {
     padding: 12px;
     margin: 8px 0;
     background: rgba(255, 255, 255, 0.1);
@@ -213,8 +214,68 @@ a:hover::after {
     transition: background 0.3s ease;
 }
 
-.results-course li:hover {
+.results li:hover {
     background: rgba(255, 255, 255, 0.2);
+}
+
+.course-profile {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #c8e6b4;
+    border-radius: 10px;
+    background: #f9fff0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.course-profile label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3e690d;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.course-profile input, select, textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #c8e6b4;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.course-profile input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #7ab24e;
+    box-shadow: 0 0 0 3px rgba(122, 178, 78, 0.2);
+}
+
+.delete-box {
+    margin-top: 15px;
+    padding: 15px;
+    border: 2px solid #ff6b6b;
+    border-radius: 10px;
+    background: #ffe5e5;
+}
+
+.delete-box p {
+    color: #b30000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 76, 76, 0.3);
 }
 
 /* Responsive Design */
