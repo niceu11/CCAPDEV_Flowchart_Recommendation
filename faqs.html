@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ID 124 - Course Management</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -10,9 +11,10 @@
             <h1>ID 124</h1>
             <nav class="nav-links">
                 <a href="#">Profile</a>
-                <a href="#">Create</a>
+                <a href="index.html">Create</a>
                 <a href="#">FAQs</a>
                 <a href="#">Contact Us!</a>
+                <a href="log-in.html">Log Out</a>
                 <img src="images/logo.png" alt="Logo" class="logo">
             </nav>
         </header>
@@ -30,16 +32,30 @@
         </div>
 
         <div class="main">
-            <p>Add Failed Courses</p>
-            <input type="text" placeholder="Enter Course Name" class="course-input">
-            <button class="add-button">Add Course</button>
+            <p>FAQs</p>
 
-            <ul class="results-course">
-                <li>Course 1</li>
-                <li>Course 2</li>
-                <li>Course 3</li>
-                <li>Course 4</li>
+            <h3> Who can use this website? </h3>
+            <p class="ans"> Current and future DLSU IS students can use this website,
+                as it will help them plan out their schedule for the next semester. This is especially helpful for
+                students who have failed their courses. </p>
+            <br>
+            <h3> Can this help if I failed more than one subject? </h3>
+            <p class="ans"> Yes! This tool can accommodate multiple failed courses and will adjust/modify the generated
+                schedule to the user's needs </p>
+            <br>
+            <h3> Will this tool consider course offerings per term? </h3>
+            <p class="ans"> No. The tool will only recommend the courses based on the flowchart and will not base it
+                on the MLS course offerings.</p>
+            <br>
+            <h3> How does the scheduler decide what courses to prioritize? </h3>
+            <p class="ans"> The system prioritizes: </p>
+            <ul class="bullet">
+                <li> Failed or prerequisite courses </li>
+                <li> Courses required for future majors </li>
             </ul>
+            <br>
+            <h3> Is this only for students who failed, or can shiftees use it too? </h3>
+            <p> Students who failed or are planning to shift can use this! </p>
         </div>
     </div>
 </body>

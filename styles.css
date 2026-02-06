@@ -160,6 +160,21 @@ a::after {
     color: #3e690d;
 }
 
+.main .ans {
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #3e690d;
+}
+
+.main .bullet {
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #3e690d;
+}
+
 .course-input {
     width: 60%;
     padding: 12px 16px;
