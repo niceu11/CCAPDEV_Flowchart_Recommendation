@@ -293,6 +293,13 @@ a::after {
     box-shadow: 0 4px 8px rgba(255, 76, 76, 0.3);
 }
 
+#pfp {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+}
+
 /* Responsive Design */
 @media (max-width: 900px) {
     .container {
