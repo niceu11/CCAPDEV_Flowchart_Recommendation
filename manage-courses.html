@@ -8,23 +8,114 @@
 <body>
     <div class="container">
         <header class="topnav">
-            <h1>ID 124</h1>
-            <nav class="nav-links">
-                <a href="admin-profile.html">Profile</a>
-                <a href="log-in.html">Log Out</a>
+            <div class="logo-wrapper">
                 <img src="images/logo.png" alt="Logo" class="logo">
-            </nav>
+                <h1>IS-PATHFINDER</h1>
+            </div>
+            <a class="nav-profile" href="admin-profile.html">
+                <img src="images/profile_placeholder.png" alt="placeholder" class="profilepic">
+                <div class="profile-text">
+                    <p>Name Placeholder</p>
+                    <p>ID Number</p>
+                </div>
+            </a>
         </header>
 
         <div class="sidebar">
             <p>Admin Dashboard</p>
+            <a class="nav-btn" href="admin-page.html">
+                <img src="images/home_icon.png" alt="Home" class="nav-icon">
+                Home
+            </a>
+            <a class="nav-btn" href="view-students.html">
+                <img src="images/viewstudents_icon.png" alt="View_Students" class="nav-icon">
+                View Students
+            </a>
+            <a class="nav-btn" href="manage-courses.html">
+                <img src="images/managecourses_icon.png" alt="Manage_Courses" class="nav-icon">
+                Manage Courses
+            </a>
+            <a class="nav-btn" href="add-course.html">
+                <img src="images/addcourse_icon.png" alt="Add_Course" class="nav-icon">
+                Add Course
+            </a>
             
-            <a href="view-students.html" class="nav-btn">View Students</a>
-            <a href="manage-courses.html" class="nav-btn">Manage Courses</a>
-            <a href="add-course.html" class="nav-btn">Add Course</a>
+            <div class="bottom-nav">
+                <a class="nav-btn" href="admin-settings.html">
+                <img src="images/settings_icon.png" alt="Settings" class="nav-icon">
+                Settings
+                </a>
+                <a class="nav-btn" href="log-in.html">
+                <img src="images/logout_icon.png" alt="Logout" class="nav-icon">
+                Logout
+                </a>
+            </div>
         </div>
 
         <div class="main">
+            <h2>Manage Courses</h2>
+            <div class="manage-courses">
+                <div class="nav-course">
+                    <div class="search-section">
+                        <input type="text" placeholder="Enter Course Name" class="course-input">
+                        <button class="add-button">Search</button>
+                    </div>
+
+                    <div class="course-display">
+                        <ul id="course-list">
+                            <li class="course-item">
+                                <img src="images/managecourses_icon.png" alt="Course Icon" class="course-icon">
+                                CCAPDEV - Web Application Development
+                            </li>
+                            <li class="course-item">
+                                <img src="images/managecourses_icon.png" alt="Course Icon" class="course-icon">
+                                ISINFOM - Transaction Management and Descriptive Analytics
+                            </li>
+                            <li class="course-item">
+                                <img src="images/managecourses_icon.png" alt="Course Icon" class="course-icon">
+                                ITISHCI - Human Computer Interaction
+                            </li>
+                            <li class="course-item">
+                                <img src="images/managecourses_icon.png" alt="Course Icon" class="course-icon">
+                                ISBUSPE - Business Peformance
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="course-profile">
+                    <form>
+                        <label for="course-code">Course Code:</label>
+                        <input type="text" id="course-code" name="course-code" value="CCAPDEV">
+                        <br><br>
+
+                        <label for="course-name">Course Name:</label>
+                        <input type="text" id="course-name" name="course-name" value="Web Application Development">
+                        <br><br>
+
+                        <label for="description">Description:</label><br>
+                        <textarea id="description" name="description" rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas consequat mi eu pellentesque. Sed luctus sagittis ante, eget tempor tellus pellentesque at.</textarea>
+                        <br><br>
+
+                        <label for="department">Department:</label>
+                        <select id="department" name="department">
+                            <option value="ccs">College of Computer Studies</option>
+                            <option value="cob">College of Business</option>
+                            <option value="cla">College of Liberal Arts</option>
+                            <option value="gcoe">Gokongwei College of Engineering</option>
+                        </select>
+                        <br><br>
+                        
+                        <div class="course-profile-btn">
+                            <button type="button" class="delete-button">Delete Course</button>
+                            <button type="button" class="save-button">Save Course</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="main">
             <p>Search Course</p>
             <input type="text" placeholder="Enter Course Name" class="course-input">
             <button class="add-button">Search</button>
@@ -36,6 +127,7 @@
                 <li class="course-item">Course 4</li>
             </ul>
         </div>
+        -->
     </div>
 
     <script src="script.js"></script>

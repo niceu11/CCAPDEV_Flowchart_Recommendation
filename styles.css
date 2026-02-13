@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -114,18 +116,17 @@ loginForm {
 
 
 body {
-    color: #3e690d;
-    background: linear-gradient(135deg, #ebffdb 0%, #c8e6b4 100%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom, #d0dfcc, #869772);
+    font-family: "Nunito Sans", sans-serif;
     min-height: 100vh;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 250px 1fr;
     grid-template-rows: auto 1fr;
     gap: 20px;
     min-height: 100vh;
@@ -138,14 +139,14 @@ body {
     justify-content: space-between;
     align-items: center;
     background: white;
-    border: 2px solid #7ab24e;
+    border: 2px solid #3e690d;
     border-radius: 15px;
     padding: 15px 25px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .topnav h1 {
-    color: #538d11;
+    color: #3e690d;
     font-size: 28px;
     font-weight: bold;
 }
@@ -157,15 +158,33 @@ body {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color:#3e690d;
+    cursor: pointer;
+}
+
+.nav-profile:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 2px 4px rgba(62, 105, 13, 0.5));
+}
+
+.profilepic {
+    width: 50px;
+    height: 50px;
+}
+
 a {
     text-decoration: none;
-    color: #538d11;
+    color: #3e690d;
     font-size: 18px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -191,13 +210,12 @@ a::after {
 .sidebar {
     grid-column: 1;
     background: white;
-    border: 2px solid #7ab24e;
+    border: 2px solid #3e690d;
     border-radius: 15px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    height: fit-content;
 }
 
 .sidebar>p {
@@ -205,6 +223,12 @@ a::after {
     font-size: 20px;
     margin-bottom: 15px;
     color: #3e690d;
+}
+
+.bottom-nav {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .failed-course {
@@ -230,7 +254,7 @@ a::after {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.sidebar button, .nav-btn  {
+.sidebar button {
     width: 100%;
     margin-top: auto;
     margin: 5px;
@@ -246,20 +270,66 @@ a::after {
     box-shadow: 0 4px 8px rgba(83, 141, 17, 0.3);
 }
 
-.sidebar button:hover, .nav-btn:hover {
-    background-color: #3f6f0c;
+.sidebar button:hover {
+    color: white;
+    background-color: #3e690d;
+    border: none;
+    border-radius: 5px;
+    /* transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4); */
+}
+
+.nav-btn {
+    color: #3e690d;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.nav-btn:hover {
+    color: white;
+    background-color: #3e690d;
+    border-radius: 5px;
+    cursor: pointer;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.nav-btn:hover .nav-icon {
+    filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1)) invert(35%) sepia(100%) grayscale(100%) brightness(150%);
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 /* Main Content Styles */
 .main {
     grid-column: 2;
+    color: #3e690d;
     background: white;
-    border: 2px solid #7ab24e;
+    border: 2px solid #3e690d;
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.main h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .main>p {
@@ -332,20 +402,20 @@ a::after {
     box-shadow: 0 0 0 3px rgba(122, 178, 78, 0.2);
 }
 
-.add-button, .save-button {
-    background-color: #538d11;
+button {
+    background-color: #3e690d;
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 12px 12px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(83, 141, 17, 0.3);
 }
 
-.add-button:hover, .save-button:hover {
+button:hover {
     background-color: #3f6f0c;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
@@ -374,7 +444,63 @@ a::after {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.manage-courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.nav-course {
+    grid-column: 1;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #c8e6b4;
+    border-radius: 10px;
+    background: #f9fff0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-display ul {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.course-item {
+    display: flex;
+    align-items: center;
+    color: #3e690d;
+    background-color: white;
+    border: 2px solid #c8e6b4;
+    border-radius: 15px;
+    padding: 12px 15px;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+}
+
+.course-item:hover {
+    border-color: #7ab24e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
+}
+
+.course-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
 .course-profile {
+    grid-column: 2;
     margin-top: 20px;
     padding: 20px;
     border: 2px solid #c8e6b4;
@@ -385,7 +511,7 @@ a::after {
 
 .course-profile label {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bolder;
     color: #3e690d;
     margin-bottom: 8px;
     display: block;
@@ -407,31 +533,49 @@ a::after {
     box-shadow: 0 0 0 3px rgba(122, 178, 78, 0.2);
 }
 
-.delete-box {
-    margin-top: 15px;
-    padding: 15px;
-    border: 2px solid #ff6b6b;
-    border-radius: 10px;
-    background: #ffe5e5;
+.course-profile-btn {
+    display: flex;
+    justify-content: space-between;
 }
 
-.delete-box p {
-    color: #b30000;
-    font-weight: bold;
-    margin-bottom: 10px;
+.save-button {
+    color: #3e690d;
+    background-color: white;
+    border: 2px solid #3e690d;
+}
+
+.save-button:hover {
+    color: white;
 }
 
 .delete-button {
-    background-color: #b30000;
+    color: #962424;
+    background-color: white;
+    border: 2px solid #962424;
+}
+
+.delete-button:hover {
     color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(255, 76, 76, 0.3);
+    background-color: #962424;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e690d;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(62, 105, 13, 0.5);
 }
 
 /* Responsive Design */
