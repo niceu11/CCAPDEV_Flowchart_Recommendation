@@ -1,12 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+/* DEFAULT STYLES */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* LOGIN PAGE */
+body {
+    background-image: linear-gradient(to bottom, #d0dfcc, #869772);
+    font-family: "Nunito Sans", sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+button {
+    background-color: #3e690d;
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(83, 141, 17, 0.3);
+}
+
+button:hover {
+    background-color: #3f6f0c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
+}
+
+/* Login Page */
 .login-body {
   min-height: 100vh;
   background: linear-gradient(135deg, #ebffdb 0%, #7ab24e 100%);
@@ -101,45 +138,13 @@ loginForm {
   transform: translateY(0);
 }
 
-/* USER PROFILE */
-
-.profile-info {
-    margin-left: 40px;
-}
-
-.profile-info #pfp {
-    border-radius: 100px;
-    width: 200px;
-    height: 200px;
-}
-
-
-
-body {
-    background-image: linear-gradient(to bottom, #d0dfcc, #869772);
-    font-family: "Nunito Sans", sans-serif;
-    min-height: 100vh;
-}
-
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 20px;
-    min-height: 100vh;
-}
-
 /* Header Styles */
 .topnav {
     grid-column: 1/-1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
-    border: 2px solid #3e690d;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
     padding: 15px 25px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -151,10 +156,10 @@ body {
     font-weight: bold;
 }
 
-.nav-links {
+.logo-wrapper {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 .logo {
@@ -180,6 +185,12 @@ body {
 .profilepic {
     width: 50px;
     height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 a {
@@ -209,8 +220,7 @@ a::after {
 /* Sidebar Styles */
 .sidebar {
     grid-column: 1;
-    background: white;
-    border: 2px solid #3e690d;
+    background-color: #ffffffcc;
     border-radius: 15px;
     padding: 20px;
     display: flex;
@@ -223,12 +233,6 @@ a::after {
     font-size: 20px;
     margin-bottom: 15px;
     color: #3e690d;
-}
-
-.bottom-nav {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
 }
 
 .failed-course {
@@ -252,31 +256,6 @@ a::after {
 
 .failed-course li:hover {
     background: rgba(255, 255, 255, 0.2);
-}
-
-.sidebar button {
-    width: 100%;
-    margin-top: auto;
-    margin: 5px;
-    background-color: #538d11;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(83, 141, 17, 0.3);
-}
-
-.sidebar button:hover {
-    color: white;
-    background-color: #3e690d;
-    border: none;
-    border-radius: 5px;
-    /* transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4); */
 }
 
 .nav-btn {
@@ -309,18 +288,17 @@ a::after {
     filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1)) invert(35%) sepia(100%) grayscale(100%) brightness(150%);
 }
 
-.logo-wrapper {
+.bottom-nav {
+    margin-top: auto;
     display: flex;
-    align-items: center;
-    gap: 15px;
+    flex-direction: column;
 }
 
 /* Main Content Styles */
 .main {
     grid-column: 2;
     color: #3e690d;
-    background: white;
-    border: 2px solid #3e690d;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -389,36 +367,17 @@ a::after {
 .course-input {
     width: 60%;
     padding: 12px 16px;
-    border: 2px solid #c8e6b4;
+    border-style: none;
     border-radius: 10px;
     font-size: 16px;
     margin-right: 10px;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .course-input:focus {
     outline: none;
-    border-color: #7ab24e;
-    box-shadow: 0 0 0 3px rgba(122, 178, 78, 0.2);
-}
-
-button {
-    background-color: #3e690d;
-    color: white;
-    border: none;
-    padding: 12px 12px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(83, 141, 17, 0.3);
-}
-
-button:hover {
-    background-color: #3f6f0c;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .results {
@@ -444,6 +403,18 @@ button:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
+/* User Profile */
+.profile-info {
+    margin-left: 40px;
+}
+
+.profile-info #pfp {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Manage Courses Styles */
 .manage-courses {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -454,16 +425,40 @@ button:hover {
     grid-column: 1;
     margin-top: 20px;
     padding: 20px;
-    border: 2px solid #c8e6b4;
+    /* border: 2px solid #3e690d; */
     border-radius: 10px;
-    background: #f9fff0;
+    background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .search-section {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: baseline;
     gap: 10px;
+}
+
+.search-icon {
+    margin: auto;
+    width: 25px;
+    height: 25px;
+}
+
+.search-section input {
+    width: 100%;
+    font-size: 15px;
+    padding: 2px 2px;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: #3e690d 2px solid;
+    box-shadow: none;
+}
+
+.search-section input:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .course-display ul {
@@ -478,7 +473,7 @@ button:hover {
     align-items: center;
     color: #3e690d;
     background-color: white;
-    border: 2px solid #c8e6b4;
+    /* border: 2px solid #3e690d; */
     border-radius: 15px;
     padding: 12px 15px;
     list-style-type: none;
@@ -487,7 +482,7 @@ button:hover {
 }
 
 .course-item:hover {
-    border-color: #7ab24e;
+    border-color: #3e690d;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
 }
@@ -503,9 +498,9 @@ button:hover {
     grid-column: 2;
     margin-top: 20px;
     padding: 20px;
-    border: 2px solid #c8e6b4;
+    /* border: 2px solid #3e690d; */
     border-radius: 10px;
-    background: #f9fff0;
+    background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -520,17 +515,18 @@ button:hover {
 .course-profile input, select, textarea {
     width: 100%;
     padding: 10px 14px;
-    border: 2px solid #c8e6b4;
+    border-style: none;
     border-radius: 8px;
     font-size: 15px;
     margin-bottom: 15px;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .course-profile input:focus, select:focus, textarea:focus {
     outline: none;
-    border-color: #7ab24e;
-    box-shadow: 0 0 0 3px rgba(122, 178, 78, 0.2);
+    border-color: #3e690d;
+    box-shadow: 0 0 0 3px rgba(62, 105, 13, 0.2);
 }
 
 .course-profile-btn {
@@ -561,6 +557,7 @@ button:hover {
     box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
 }
 
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
