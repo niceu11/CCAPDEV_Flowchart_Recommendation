@@ -65,7 +65,7 @@ button:hover {
 
 #welcome-user {
   color: #3e690d;
-  font-family: garamond, serif;
+  font-family: "Nunito Sans", sans-serif;
   text-align: center;
   font-size: 48px;
   margin-bottom: 40px;
@@ -333,7 +333,6 @@ a::after {
     background-color: #538d11;
     color: white;
     border: none;
-    margin-left: 500px;
     padding: 12px 24px;
     border-radius: 10px;
     cursor: pointer;
@@ -406,12 +405,42 @@ a::after {
 /* User Profile */
 .profile-info {
     margin-left: 40px;
+    color: #3e690d;
 }
 
 .profile-info #pfp {
     border-radius: 100px;
     width: 200px;
     height: 200px;
+}
+
+.edit-info {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #3e690d;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.edit-logo {
+    height: 20px;
+    margin-top: 20px;
+}
+
+.editprofile-button {
+     background: transparent;
+     border: none;
+     padding: 0;
+     box-shadow: none;
+     transform: none;
+}
+
+.editprofile-button:hover {
+    background: transparent;
+    box-shadow: none;
+    transform: none;
 }
 
 /* Manage Courses Styles */

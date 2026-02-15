@@ -20,17 +20,20 @@
     </header>
     <div class="profile-info">
         <!-- turn into pfp chosen by user -->
-        <!-- when hovering on pfp, it shows camera logo  and turns a bit gray (edit option) -->
+        <!-- when hovering on pfp, it shows camera logo and turns a bit gray (edit option) -->
         <img src="images/pfp-sample.jpg" id="pfp">
         <br>
         <br>
-        <h1 id="full-name"> Name </h1>
-        <img src="images/edit-button.png">
-        <h2 id="id-number"> ID Number </h2>
-
+        <h1> Name </h1>
+        <h2> ID Number </h2>
     </div>
     <div class="main">
-        <p>Profile Information</p>
+        <div class="edit-info">
+            <p>Profile Information</p>
+            <button class="editprofile-button">
+                <img src="images/edit-button.png" class="edit-logo">
+            </button>
+        </div>
 
         <h3 class="profile-label"> Birthday </h3>
         <p class="user-info" id="user-birthday"> insert birthday </p>
