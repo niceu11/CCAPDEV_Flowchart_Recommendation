@@ -55,6 +55,20 @@ button:hover {
   padding: 20px;
 }
 
+.login-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    background-opacity: 0.7;
+}
+
 #dlsu {
   width: 300px;
   max-width: 90%;

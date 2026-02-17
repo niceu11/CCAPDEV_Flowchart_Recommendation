@@ -6,30 +6,33 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="login-body">
-  <div>
-    <img src="images/logo.png" id="dlsu">
-    <h1 id="welcome-user"> Welcome! </h1>
-  </div>
-  <br>
-  <div>
-    <form id="loginForm" onsubmit="return redirectToPage(event)">
-      <div class="data-login">
-        <label class="login-info"> Username: </label>
-        <input type="text" id="username" class="login-button">
-      </div>
-      <br>
-      <div class="data">
-        <label class="login-info"> Password: </label>
-        <input type="password" id="password" class="login-button">
-      </div>
-      <br> <br>
-      <div>
-        <input type="submit" id="login-send">
-      </div>
-    </form>
-  </div>
+    <div class="login-container">
+        <div>
+            <img src="images/logo.png" id="dlsu">
+            <h1 id="welcome-user"> Welcome! </h1>
+        </div>
+        <br>
+        <div>
+            <form id="loginForm" onsubmit="return redirectToPage(event)">
+            <div class="data-login">
+                <label class="login-info"> Username: </label>
+                <input type="text" id="username" class="login-button">
+            </div>
+            <br>
+            <div class="data">
+                <label class="login-info"> Password: </label>
+                <input type="password" id="password" class="login-button">
+            </div>
+            <br>
+            <br>
+            <div>
+                <input type="submit" id="login-send">
+            </div>
+            </form>
+        </div>
 
-  <script src="script.js"></script>
+      <script src="script.js"></script>
+    </div>
 </body>
 
 </html>
