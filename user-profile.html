@@ -30,7 +30,9 @@
         <br>
         <br>
         <h1> Name </h1>
+        <input type="text" class="user-main-info" id="user-name" placeholder="Name">
         <h2> ID Number </h2>
+        <input type="text" class="user-main-info" id="user-id" placeholder="ID Number">
     </div>
     <div class="main">
         <div class="edit-info">
@@ -39,19 +41,18 @@
                 <img src="images/edit-button.png" class="edit-logo">
             </button>
         </div>
-
-        <h3 class="profile-label"> Birthday </h3>
-        <p class="user-info" id="user-birthday"> insert birthday </p>
-        <h3 class="profile-label"> Contact Information </h3>
-        <p class="user-info" id="user-contact"> insert </p>
-        <h3 class="profile-label"> Email </h3>
-        <p class="user-info" id="user-email"> insert </p>
-        <h3 class="profile-label"> Password </h3>
-        <p class="user-info" id="user-insert"> insert </p>
-
-        <div>
-            <button class="profile-button"> Save Profile </button>
-        </div>
+        <form>
+            <h3 class="profile-label"> Birthday </h3>
+            <input type="date" class="user-info" id="user-birthday" placeholder="Birthday">
+            <h3 class="profile-label"> Contact Number </h3>
+            <input type="text" class="user-info" id="user-contact" placeholder="ex. 09171234567">
+            <h3 class="profile-label"> Email </h3>
+            <input type="text" class="user-info" id="user-email" placeholder="student@gmail.com">
+            <h3 class="profile-label"> Password </h3>
+            <input type="password" class="user-info" id="user-insert">
+            <br>
+            <button type="submit" class="profile-button"> Save Profile </button>
+        </form>
     </div>
 </div>
 </body>

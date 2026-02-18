@@ -345,10 +345,31 @@ a::after {
 }
 
 .main .user-info {
-    margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: normal;
     font-size: 20px;
+    width: 60%;
+    padding: 12px 16px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.main .user-main-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 20px;
+    width: 20%;
+    padding: 12px 16px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .main .profile-label {
