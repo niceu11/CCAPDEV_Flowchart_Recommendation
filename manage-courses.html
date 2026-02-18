@@ -41,10 +41,10 @@
             </a>
             
             <div class="bottom-nav">
-                <a class="nav-btn" href="admin-settings.html">
+                <!-- <a class="nav-btn" href="admin-settings.html">
                 <img src="images/settings_icon.png" alt="Settings" class="nav-icon">
                 Settings
-                </a>
+                </a> -->
                 <a class="nav-btn" href="log-in.html">
                 <img src="images/logout_icon.png" alt="Logout" class="nav-icon">
                 Logout
@@ -60,76 +60,80 @@
                         <div class="search-section">
                                 <img src="images/search_icon.png" alt="Search Icon" class="search-icon">
                                 <input type="text" placeholder="Search" class="course-input">
-                                <button class="add-button">Search</button>
+                                <button class="search-button">Search</button>
                         </div>
                     </div>
                     <div class="course-display">
                         <ul id="course-list">
                             <li class="course-item">
                                 <img src="images/managecourses_icon.png" alt="Course Icon" class="course-icon">
-                                CCAPDEV - Web Application Development
+                                <div class="course-item-text">
+                                    <span class="course-code">CCAPDEV</span>
+                                    <span class="course-name">Web Application Development</span>
+                                </div>
                             </li>
                             <li class="course-item">
                                 <img src="images/managecourses_icon.png" alt="Course Icon" class="course-icon">
-                                ISINFOM - Transaction Management and Descriptive Analytics
+                                <div class="course-item-text">
+                                    <span class="course-code">ISINFOM</span>
+                                    <span class="course-name">Transaction Management and Descriptive Analytics</span>
+                                </div>
                             </li>
                             <li class="course-item">
                                 <img src="images/managecourses_icon.png" alt="Course Icon" class="course-icon">
-                                ITISHCI - Human Computer Interaction
+                                <div class="course-item-text">
+                                    <span class="course-code">ITISHCI</span>
+                                    <span class="course-name">Human Computer Interaction</span>
+                                </div>
                             </li>
                             <li class="course-item">
                                 <img src="images/managecourses_icon.png" alt="Course Icon" class="course-icon">
-                                ISBUSPE - Business Peformance
+                                <div class="course-item-text">
+                                    <span class="course-code">ISBUSPE</span>
+                                    <span class="course-name">Business Performance</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="course-profile">
+                    <h3>Course Details</h3>
                     <form>
-                        <label for="course-code">Course Code:</label>
-                        <input type="text" id="course-code" name="course-code" value="CCAPDEV">
-                        <br><br>
+                        <div class="form-group">
+                            <label for="course-code">Course Code</label>
+                            <input type="text" id="course-code" name="course-code" value="CCAPDEV" placeholder="Enter course code">
+                        </div>
 
-                        <label for="course-name">Course Name:</label>
-                        <input type="text" id="course-name" name="course-name" value="Web Application Development">
-                        <br><br>
+                        <div class="form-group">
+                            <label for="course-name">Course Name</label>
+                            <input type="text" id="course-name" name="course-name" value="Web Application Development" placeholder="Enter course name">
+                        </div>
 
-                        <label for="description">Description:</label><br>
-                        <textarea id="description" name="description" rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas consequat mi eu pellentesque. Sed luctus sagittis ante, eget tempor tellus pellentesque at.</textarea>
-                        <br><br>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" rows="4" maxlength="500" placeholder="Enter course description...">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas consequat mi eu pellentesque. Sed luctus sagittis ante, eget tempor tellus pellentesque at.</textarea>
+                        </div>
 
-                        <label for="department">Department:</label>
-                        <select id="department" name="department">
-                            <option value="ccs">College of Computer Studies</option>
-                            <option value="cob">College of Business</option>
-                            <option value="cla">College of Liberal Arts</option>
-                            <option value="gcoe">Gokongwei College of Engineering</option>
-                        </select>
-                        <br><br>
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select id="department" name="department">
+                                <option value="ccs" selected>College of Computer Studies</option>
+                                <option value="cob">College of Business</option>
+                                <option value="cla">College of Liberal Arts</option>
+                                <option value="gcoe">Gokongwei College of Engineering</option>
+                                <option value="cos">College of Science</option>
+                            </select>
+                        </div>
                         
                         <div class="course-profile-btn">
                             <button type="button" class="delete-button">Delete Course</button>
-                            <button type="button" class="save-button">Save Course</button>
+                            <button type="submit" class="save-button">Save Changes</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
-        <!-- <div class="main">
-            <p>Search Course</p>
-            <input type="text" placeholder="Enter Course Name" class="course-input">
-            <button class="add-button">Search</button>
-
-            <ul class="results" id="course-list">
-                <li class="course-item">Course 1</li>
-                <li class="course-item">Course 2</li>
-                <li class="course-item">Course 3</li>
-                <li class="course-item">Course 4</li>
-            </ul>
-        </div>
-        -->
     </div>
 
     <script src="script.js"></script>
