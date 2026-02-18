@@ -41,10 +41,10 @@
             </a>
             
             <div class="bottom-nav">
-                <a class="nav-btn" href="admin-settings.html">
+                <!-- <a class="nav-btn" href="admin-settings.html">
                 <img src="images/settings_icon.png" alt="Settings" class="nav-icon">
                 Settings
-                </a>
+                </a> -->
                 <a class="nav-btn" href="log-in.html">
                 <img src="images/logout_icon.png" alt="Logout" class="nav-icon">
                 Logout
@@ -53,16 +53,96 @@
         </div>
 
         <div class="main">
-            <p>Search User</p>
-            <input type="text" placeholder="Enter Student Name" class="course-input">
-            <button class="add-button">Search</button>
+            <h2>View Students</h2>
+            <div class="view-students">
+                <div class="nav-students">
+                    <div class="search-wrapper">
+                        <div class="search-section">
+                                <img src="images/search_icon.png" alt="Search Icon" class="search-icon">
+                                <input type="text" placeholder="Search" class="student-input">
+                                <button class="search-button">Search</button>
+                        </div>
+                    </div>
+                    <div class="student-display">
+                        <ul id="student-list">
+                            <li class="student-item">
+                                <img src="images/profile_placeholder.png" alt="Student Icon" class="student-icon">
+                                <div class="student-item-text">
+                                    <span class="id-number">124</span>
+                                    <span class="student-name">Lorenzo Carmona</span>
+                                </div>
+                            </li>
+                            <li class="student-item">
+                                <img src="images/profile_placeholder.png" alt="Student Icon" class="student-icon">
+                                <div class="student-item-text">
+                                    <span class="id-number">124</span>
+                                    <span class="student-name">Gabriel Meer</span>
+                                </div>
+                            </li>
+                            <li class="student-item">
+                                <img src="images/profile_placeholder.png" alt="Student Icon" class="student-icon">
+                                <div class="student-item-text">
+                                    <span class="id-number">124</span>
+                                    <span class="student-name">Joreve De Jesus</span>
+                                </div>
+                            </li>
+                            <li class="student-item">
+                                <img src="images/profile_placeholder.png" alt="Student Icon" class="student-icon">
+                                <div class="student-item-text">
+                                    <span class="id-number">124</span>
+                                    <span class="student-name">Andie Woo</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            <ul class="results" id="user-list">
-                <li class="user-item">User 1</li>
-                <li class="user-item">User 2</li>
-                <li class="user-item">User 3</li>
-                <li class="user-item">User 4</li>
-            </ul>
+                <div class="student-profile">
+                    <h3>Student Details</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="student-name">Student Name</label>
+                            <input type="text" id="student-name" name="student-name" value="Lorenzo Carmona" placeholder="Enter student name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id-number">ID Number</label>
+                            <input type="text" id="id-number" name="id-number" value="124" placeholder="Enter ID number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthday">Birthday</label>
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-info">Contact Information</label>
+                            <input type="text" id="contact-info" name="contact-info" value="09123456789" placeholder="Enter contact information">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" name="email" value="lorenzo_carmona@dlsu.edu.ph" placeholder="Enter email address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select id="department" name="department">
+                                <option value="ccs" selected>College of Computer Studies</option>
+                                <option value="cob">College of Business</option>
+                                <option value="cla">College of Liberal Arts</option>
+                                <option value="gcoe">Gokongwei College of Engineering</option>
+                                <option value="cos">College of Science</option>
+                            </select>
+                        </div>
+                        
+                        <div class="student-profile-btn">
+                            <button type="button" class="delete-button">Delete Student</button>
+                            <button type="submit" class="save-button">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
