@@ -392,6 +392,19 @@ a::after {
     box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
 }
 
+.look-course {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.look-course button {
+    margin-top: 21px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
 
 .results {
     color: #3e690d;
