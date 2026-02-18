@@ -22,14 +22,14 @@
     </header>
 
     <div class="profile-info">
-       <button class="edit-pfp">
+        <button class="edit-pfp">
             <img src="images/pfp-sample.jpg" id="pfp">
             <div class="camera-overlay">
                 <img src="images/camera-logo.png" id="camera-logo" alt="Edit Profile">
             </div>
         </button>
-        <h1 id="user-name"> Juan Cruz </h1>
-        <h2 id="user-id"> 12412345 </h2>
+        <input type="text" class="user-info" id="user-name" placeholder="Name">
+        <input type="text" class="user-info" id="user-id" placeholder="ID Number">
     </div>
     <div class="main">
         <div class="edit-info">
@@ -42,13 +42,13 @@
         </div>
         <form>
             <h3 class="profile-label"> Birthday </h3>
-            <p class="user-info" id="user-birthday"> 08/30/2005 </p>
+            <input type="date" class="user-info" id="user-birthday" placeholder="Birthday">
             <h3 class="profile-label"> Contact Number </h3>
-            <p class="user-info" id="user-contact"> 09171234567 </p>
+            <input type="text" class="user-info" id="user-contact" placeholder="ex. 09171234567">
             <h3 class="profile-label"> Email </h3>
-            <p class="user-info" id="user-email"> juan_cruz@dlsu.edu.ph
+            <input type="text" class="user-info" id="user-email" placeholder="student@gmail.com">
             <h3 class="profile-label"> Password </h3>
-            <p class="user-info" id="user-insert"> 12345 </p>
+            <input type="password" class="user-info" id="user-insert">
             <br>
             <button type="submit" class="profile-button"> Save Profile </button>
         </form>

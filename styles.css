@@ -367,6 +367,14 @@ a::after {
     background: white;
 }
 
+#user-name {
+    margin-top: 20px;
+}
+
+#user-id {
+    margin-top: 20px;
+}
+
 .main .profile-label {
     background-color: #3e690d;
     padding: 15px;
@@ -429,6 +437,7 @@ a::after {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     text-align: left;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 .results button:hover {
