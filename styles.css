@@ -152,6 +152,45 @@ loginForm {
   transform: translateY(0);
 }
 
+/* FAQ and Contact Us*/
+.container-full {
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+}
+
+.main-info {
+    flex: 1;
+    color: #3e690d;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+.main-info .ans {
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #3e690d;
+    text-align: left;
+}
+
+.main-info h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main-info .bullet {
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #3e690d;
+}
+
 /* Header Styles */
 .topnav {
     grid-column: 1/-1;
@@ -360,21 +399,6 @@ a::after {
     background-color: #3f6f0c;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
-}
-
-.main .ans {
-    font-weight: normal;
-    font-size: 15px;
-    margin-bottom: 20px;
-    color: #3e690d;
-}
-
-.main .bullet {
-    font-weight: normal;
-    font-size: 15px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    color: #3e690d;
 }
 
 .course-input {
