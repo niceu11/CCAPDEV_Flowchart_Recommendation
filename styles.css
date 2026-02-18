@@ -344,37 +344,32 @@ a::after {
     color: #3e690d;
 }
 
-.main .user-info {
+.user-info {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: normal;
-    font-size: 20px;
-    width: 60%;
+    width: 100%;
     padding: 12px 16px;
-    border-style: none;
+    border: 2px solid #e8f0e3;
     border-radius: 10px;
     font-size: 16px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: #fafff7;
+    color: #3e690d;
+    font-family: "Nunito Sans", sans-serif;
 }
 
-.main .user-main-info {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: normal;
-    font-size: 20px;
-    width: 20%;
-    padding: 12px 16px;
-    border-style: none;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+.user-info:focus, select:focus {
+    outline: none;
+    border-color: #3e690d;
+    box-shadow: 0 0 0 3px rgba(122, 178, 78, 0.15);
+    background: white;
 }
 
 .main .profile-label {
-    background-color: #addb89;
+    background-color: #3e690d;
     padding: 15px;
+    color: white;
 }
 
 .main .profile-button {

@@ -8,31 +8,28 @@
 <body>
 <div class="container">
     <header class="topnav">
-        <h1>ID 124</h1>
+        <div class="logo-wrapper">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1>IS-PATHFINDER</h1>
+        </div>
         <nav class="nav-links">
             <a href="user-profile.html">Profile</a>
             <a href="index.html">Create</a>
             <a href="faqs.html">FAQs</a>
             <a href="contact-us.html">Contact Us!</a>
             <a href="log-in.html">Log Out</a>
-            <img src="images/logo.png" alt="Logo" class="logo">
         </nav>
     </header>
+
     <div class="profile-info">
-        <!-- turn into pfp chosen by user -->
-        <!-- when hovering on pfp, it shows camera logo and turns a bit gray (edit option) -->
-        <button class="edit-pfp">
+       <button class="edit-pfp">
             <img src="images/pfp-sample.jpg" id="pfp">
             <div class="camera-overlay">
                 <img src="images/camera-logo.png" id="camera-logo" alt="Edit Profile">
             </div>
         </button>
-        <br>
-        <br>
-        <h1> Name </h1>
-        <input type="text" class="user-main-info" id="user-name" placeholder="Name">
-        <h2> ID Number </h2>
-        <input type="text" class="user-main-info" id="user-id" placeholder="ID Number">
+        <input type="text" class="user-info" id="user-name" placeholder="Name">
+        <input type="text" class="user-info" id="user-id" placeholder="ID Number">
     </div>
     <div class="main">
         <div class="edit-info">
