@@ -30,20 +30,25 @@
                 <li>Course 3</li>
                 <li>Course 4</li>
             </ul>
-            <button>Generate</button>
+            <form>
+                <button type="submit" class="generate-button">Generate</button>
+            </form>
         </div>
 
         <div class="main">
             <p>Add Failed Courses</p>
-            <input type="text" placeholder="Enter Course Name" class="user-info">
-            <button class="add-button">Add Course</button>
-
-            <ul class="results">
-                <li>Course 1</li>
-                <li>Course 2</li>
-                <li>Course 3</li>
-                <li>Course 4</li>
-            </ul>
+            <form>
+                <input type="text" placeholder="Enter Course Name" class="user-info">
+                <button type="submit" class="add-button">Add Course</button>
+            </form>
+            <br>
+            <form class="results">
+                <button type="submit">Course 1</button>
+                <button type="submit">Course 2</button>
+                <button type="submit">Course 3</button>
+                <button type="submit">Course 4</button>
+                <!--once submitted/clicked, course is added to fails-->
+            </form>
         </div>
     </div>
 </body>

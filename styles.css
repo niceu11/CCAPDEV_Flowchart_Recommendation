@@ -263,26 +263,27 @@ a::after {
 }
 
 .failed-course {
-    color: white;
-    background: linear-gradient(135deg, #7ab24e 0%, #538d11 100%);
+    color: #3e690d;
+    background: #3e690d;
     border: none;
     border-radius: 10px;
     padding: 15px 20px;
     list-style: none;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
 }
 
 .failed-course li {
     padding: 10px;
     margin: 5px 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: white;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 
 .failed-course li:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: #fafff7;
 }
 
 .nav-btn {
@@ -393,26 +394,37 @@ a::after {
 
 
 .results {
-    color: white;
-    background: linear-gradient(135deg, #7ab24e 0%, #538d11 100%);
+    color: #3e690d;
     border: none;
     border-radius: 10px;
-    padding: 20px 25px;
     list-style: none;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    margin: 0;
 }
 
-.results li {
-    padding: 12px;
-    margin: 8px 0;
-    background: rgba(255, 255, 255, 0.1);
+.results button {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    color: #3e690d;
+    shadow-box: none;
+    padding: 25px;
+    margin: 10px 0;
+    background: white;
     border-radius: 5px;
     transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    text-align: left;
 }
 
-.results li:hover {
-    background: rgba(255, 255, 255, 0.2);
+.results button:hover {
+    border-color: #3e690d;
+    border: 2px solid;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(122, 178, 78, 0.2);
+    background-color: #fafff7;
+    transition: all 0.3s ease;
 }
 
 /* User Profile */
