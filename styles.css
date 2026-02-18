@@ -391,21 +391,6 @@ a::after {
     box-shadow: 0 6px 12px rgba(83, 141, 17, 0.4);
 }
 
-.course-input {
-    width: 60%;
-    padding: 12px 16px;
-    border-style: none;
-    border-radius: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.course-input:focus {
-    outline: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-}
 
 .results {
     color: white;
